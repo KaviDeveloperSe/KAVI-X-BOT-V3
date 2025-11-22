@@ -18,7 +18,7 @@
         "@ffmpeg-installer/ffmpeg": "^1.1.0",
         "@hapi/boom": "^10.0.0",
         "@octokit/rest": "^22.0.0",
-        "@whiskeysockets/baileys": "npm:@otaxayun/baileys",
+        "@whiskeysockets/baileys": "npm:@yaoii-bails/baileys",
         "api-dylux": "^1.8.5",
         "awesome-phonenumber": "^4.4.0",
         "chalk": "^4.1.2",
