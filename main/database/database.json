@@ -1,0 +1,25 @@
+{
+  "settings": {
+    "online": false,
+    "autoread": false,
+    "autorecord": false,
+    "autotype": false,
+    "autoswview": false,
+    "welcome": false,
+    "worktype": "public",
+    "ntsfw": false,
+    "autoswlike": false,
+    "autoreact": false
+  },
+  "auth": {
+    "ownerNumbers": [
+      "94702128378",
+      "94766577249",
+      "94764891827"
+    ]
+  },
+  "users": [],
+  "forwardJid": [
+    "120363420808808591@g.us"
+  ]
+}
