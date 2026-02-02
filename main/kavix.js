@@ -1067,11 +1067,13 @@ ${downloadData}
           const responseDLServer_2 = await axios.get(`https://kavi-public-apis.vercel.app/api/v2/public/download/cinesubz/download/?url=${encodeURIComponent(responseDLServer_1.data?.data)}&api_key=e50a2d7ee2d2a89081561cf67e61a45191d4168921d072863154037e783e9a0f`);
           if (!responseDLServer_2.data?.data?.link) return replygckavi('🚫 ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ ɴᴏᴛ ꜰᴏᴜɴᴅ sᴇʀᴠᴇʀ ᴇxᴛ.');
 
+          console.log(details);
+
           const sendData = `*\`${details.title}\`*
 
 > ⭐ ɪᴍᴅʙ: ${details.imdbRating || 'N/A'} / 10
 > 👥 ᴜsᴇʀ ʀᴀᴛɪɴɢ: ${details.userRating || 'N/A'} (${details.ratingCount || '0 votes'})
-> 🗓️ ʀᴇʟᴇᴀsᴇ ʏᴇᴀʀ: ${cleanYear}
+> 🗓️ ʀᴇʟᴇᴀsᴇ ʏᴇᴀʀ: ${details.year || 'N/A'}
 > ⏱️ ʀᴜɴᴛɪᴍᴇ: ${details.duration || 'N/A'}
 > 🎞️ ǫᴜᴀʟɪᴛʏ: ${details.quality || 'N/A'}
 > 🌍 ᴄᴏᴜɴᴛʀʏ: ${details.country?.toUpperCase() || 'N/A'}
