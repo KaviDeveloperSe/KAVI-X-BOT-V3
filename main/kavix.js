@@ -1069,12 +1069,15 @@ ${downloadData}
 
           const sendData = `*\`${details.title}\`*
 
-> ⭐ ʀᴀᴛɪɴɢ: ${details.imdbRating || 'N/A'}
-> 🗓️ ʀᴇʟᴇᴀsᴇ ʏᴇᴀʀ: ${details.year || 'N/A'}
+> ⭐ ɪᴍᴅʙ: ${details.imdbRating || 'N/A'} / 10
+> 👥 ᴜsᴇʀ ʀᴀᴛɪɴɢ: ${details.userRating || 'N/A'} (${details.ratingCount || '0 votes'})
+> 🗓️ ʀᴇʟᴇᴀsᴇ ʏᴇᴀʀ: ${cleanYear}
 > ⏱️ ʀᴜɴᴛɪᴍᴇ: ${details.duration || 'N/A'}
-> 🌍 ᴄᴏᴜɴᴛʀʏ: ${details.country.toUpperCase() || 'N/A'}
+> 🎞️ ǫᴜᴀʟɪᴛʏ: ${details.quality || 'N/A'}
+> 🌍 ᴄᴏᴜɴᴛʀʏ: ${details.country?.toUpperCase() || 'N/A'}
 > 🎬 ᴅɪʀᴇᴄᴛᴏʀ: ${details.directors?.join(', ') || 'N/A'}
 > 🎭 ɢᴇɴʀᴇs: ${details.genres?.join(', ') || 'N/A'}
+> 🖇️ sᴏᴜʀᴄᴇ: cinesubzlk
 
 ⏳ Downloading... Please wait
 🔖 With Sinhala Subtitle
@@ -1137,7 +1140,7 @@ ${downloadData}
             const imgBuffer = Buffer.from(imgRes.data)
             const fileBuffer = Buffer.from(fileRes.data);
 
-            const documentCaption = `KAVI-X MD MOVIE SENDER BOT\n\n🎬 *TITLE:* ${details.title}\n🧩 *META:* ${selectedDownload.meta}\n📦 *SIZE:* ${fileSize}♻️ *ATTEMPT:* ${responseDLServer_2.data?.data?.attempt || 'Null'}\n🔖 *SINHALA SUBTITLE:* YES\n\n${kavixcaption}`;
+            const documentCaption = `KAVI-X MD MOVIE SENDER BOT\n\n🎬 *TITLE:* ${details.title}\n🧩 *META:* ${selectedDownload.meta}\n📦 *SIZE:* ${fileSize}\n♻️ *ATTEMPT:* ${responseDLServer_2.data?.data?.attempt || 'Null'}\n🔖 *SINHALA SUBTITLE:* YES\n\n${kavixcaption}`;
 
             await cyberkavi.sendMessage(m.chat, {
               document: fileBuffer,
