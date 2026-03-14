@@ -13,7 +13,7 @@ global.creator = process.env.CREATOR || "94702128378@s.whatsapp.net"
 global.botprefix = process.env.BOTPREFIX || "."
 global.restart = process.env.RESTART || true
 global.websitex = process.env.WEBSITEX || "https://kavi-x-bot-login.up.railway.app"
-global.wagc = process.env.WAGC || "https://moviemixtapesocial.zone.id"
+global.wagc = process.env.WAGC || "https://moviemixtape.vercel.app"
 global.botscript = process.env.BOTSCRIPT || "https://github.com/KaviDeveloperSe/KAVI-X-BOT"
 global.botlogo = process.env.BOTLOGO || "https://raw.githubusercontent.com/KaviDeveloperSe/KAVI-X-BOT-DB/refs/heads/main/kavix03.png"
 
