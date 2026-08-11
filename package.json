@@ -19,7 +19,7 @@
         "@hapi/boom": "^10.0.0",
         "@itsliaaa/baileys": "^0.3.18-final",
         "@octokit/rest": "^22.0.0",
-        "@whiskeysockets/baileys": "^7.0.0-rc13",
+        "@whiskeysockets/baileys": "^7.0.0-rc14",
         "api-dylux": "^1.8.5",
         "awesome-phonenumber": "^4.4.0",
         "chalk": "^4.1.2",
